@@ -93,7 +93,7 @@ export default function ServicesGrid() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <p
-            className="text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
+            className="font-syne text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
             style={{ color: "var(--accent)" }}
           >
             Services
@@ -140,7 +140,7 @@ export default function ServicesGrid() {
               <featured.icon weight="duotone" className="w-6 h-6" style={{ color: "var(--accent)" }} />
             </div>
             <p
-              className="text-[10px] font-semibold uppercase tracking-[0.18em] mb-3"
+              className="font-syne text-[10px] font-semibold uppercase tracking-[0.18em] mb-3"
               style={{ color: "var(--accent)" }}
             >
               Featured
@@ -161,7 +161,7 @@ export default function ServicesGrid() {
               {featured.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-xs px-3 py-1.5 rounded-full"
+                  className="font-syne text-xs px-3 py-1.5 rounded-full"
                   style={{
                     background: "var(--surface-2, #18181d)",
                     color: "var(--muted)",

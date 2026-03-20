@@ -99,7 +99,7 @@ function WorkflowPreview() {
       <div className="flex items-start justify-between mb-6">
         <div>
           <p
-            className="text-[10px] font-semibold uppercase tracking-[0.18em] mb-1"
+            className="font-syne text-[10px] font-semibold uppercase tracking-[0.18em] mb-1"
             style={{ color: "var(--muted)" }}
           >
             Live Automation
@@ -186,11 +186,8 @@ function WorkflowPreview() {
               {label}
             </p>
             <p
-              className="text-base font-semibold tracking-tight"
-              style={{
-                color: "var(--text)",
-                fontFamily: "var(--font-geist-mono), monospace",
-              }}
+              className="font-syne text-base font-semibold tracking-tight"
+              style={{ color: "var(--text)" }}
             >
               {value}
             </p>
@@ -220,7 +217,7 @@ export default function Hero() {
             >
               <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--accent)" }} />
               <span
-                className="text-[10px] font-semibold uppercase tracking-[0.15em]"
+                className="font-syne text-[10px] font-semibold uppercase tracking-[0.15em]"
                 style={{ color: "var(--muted)" }}
               >
                 AI Automation Agency
@@ -242,7 +239,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-2xl md:text-3xl font-semibold tracking-tight mb-8"
+              className="font-syne text-2xl md:text-3xl font-semibold tracking-tight mb-8"
               style={{ color: "var(--text)" }}
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -271,7 +268,7 @@ export default function Hero() {
             >
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
+                className="font-syne inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
                 style={{ background: "var(--accent)", color: "#09090b" }}
               >
                 Start a Project
@@ -279,7 +276,7 @@ export default function Hero() {
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200 hover:border-white/20"
+                className="font-syne inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200 hover:border-white/20"
                 style={{ border: "1px solid var(--border)", color: "var(--text)" }}
               >
                 View Services

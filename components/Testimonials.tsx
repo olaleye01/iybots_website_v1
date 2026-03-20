@@ -68,7 +68,7 @@ export default function Testimonials() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <p
-            className="text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
+            className="font-syne text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
             style={{ color: "var(--accent)" }}
           >
             Client outcomes
@@ -105,7 +105,7 @@ export default function Testimonials() {
             <div className="flex items-center gap-3">
               <Avatar initials={featured.avatar} />
               <div>
-                <p className="text-sm font-semibold" style={{ color: "var(--text)" }}>
+                <p className="font-syne text-sm font-semibold" style={{ color: "var(--text)" }}>
                   {featured.name}
                 </p>
                 <p className="text-xs" style={{ color: "var(--muted)" }}>
@@ -135,7 +135,7 @@ export default function Testimonials() {
                 <div className="flex items-center gap-3">
                   <Avatar initials={t.avatar} />
                   <div>
-                    <p className="text-sm font-semibold" style={{ color: "var(--text)" }}>
+                    <p className="font-syne text-sm font-semibold" style={{ color: "var(--text)" }}>
                       {t.name}
                     </p>
                     <p className="text-xs" style={{ color: "var(--muted)" }}>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const footerLinks = {
   Services: [
     "AI Agent Development",
@@ -21,12 +23,13 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-12 mb-16">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
-            <span
-              className="text-[11px] font-bold tracking-[0.3em] uppercase block mb-4"
-              style={{ color: "var(--text)" }}
-            >
-              IYBOTS
-            </span>
+            <Image
+              src="/iybots-logo.svg"
+              alt="Iybots Technologies"
+              width={100}
+              height={27}
+              className="mb-4"
+            />
             <p
               className="text-sm leading-relaxed max-w-[28ch]"
               style={{ color: "var(--muted)" }}
@@ -45,7 +48,7 @@ export default function Footer() {
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
               <p
-                className="text-[10px] font-semibold uppercase tracking-[0.18em] mb-5"
+                className="font-syne text-[10px] font-semibold uppercase tracking-[0.18em] mb-5"
                 style={{ color: "var(--muted)" }}
               >
                 {category}

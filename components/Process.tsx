@@ -51,7 +51,7 @@ export default function Process() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <p
-            className="text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
+            className="font-syne text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
             style={{ color: "var(--accent)" }}
           >
             How we work
@@ -87,11 +87,10 @@ export default function Process() {
                 <div className={`${isRight ? "lg:order-2" : ""}`}>
                   <div className="flex items-baseline gap-4 mb-2">
                     <span
-                      className="text-[80px] lg:text-[100px] font-bold tracking-tighter leading-none select-none"
+                      className="font-syne text-[80px] lg:text-[100px] font-bold tracking-tighter leading-none select-none"
                       style={{
                         color: "transparent",
                         WebkitTextStroke: "1px var(--muted-2)",
-                        fontFamily: "var(--font-geist-mono), monospace",
                       }}
                     >
                       {step.number}
@@ -120,7 +119,7 @@ export default function Process() {
                     {step.description}
                   </p>
                   <div
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs"
+                    className="font-syne inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs"
                     style={{
                       background: "var(--surface)",
                       border: "1px solid var(--border)",

@@ -46,7 +46,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
   }, [inView, target]);
 
   return (
-    <span ref={ref} className="tabular-nums" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+    <span ref={ref} className="font-syne tabular-nums">
       {display}
       {suffix}
     </span>
@@ -69,7 +69,7 @@ export default function Stats() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <p
-            className="text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
+            className="font-syne text-[10px] font-semibold uppercase tracking-[0.2em] mb-4"
             style={{ color: "var(--accent)" }}
           >
             By the numbers
@@ -96,13 +96,13 @@ export default function Stats() {
               transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
               <div
-                className="text-5xl lg:text-6xl font-bold tracking-tighter mb-3"
+                className="font-syne text-5xl lg:text-6xl font-bold tracking-tighter mb-3"
                 style={{ color: "var(--text)" }}
               >
                 <Counter target={stat.value} suffix={stat.suffix} />
               </div>
               <p
-                className="text-base font-semibold tracking-tight mb-2"
+                className="font-syne text-base font-semibold tracking-tight mb-2"
                 style={{ color: "var(--text)" }}
               >
                 {stat.label}

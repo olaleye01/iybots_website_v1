@@ -28,7 +28,7 @@ export default function Marquee() {
         {doubled.map((cap, i) => (
           <span key={i} className="inline-flex items-center">
             <span
-              className="text-xs font-medium uppercase tracking-[0.14em] px-8"
+              className="font-syne text-xs font-medium uppercase tracking-[0.14em] px-8"
               style={{ color: "var(--muted)" }}
             >
               {cap}

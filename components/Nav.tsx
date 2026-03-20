@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 function MagneticWrapper({ children }: { children: React.ReactNode }) {
@@ -62,19 +63,22 @@ export default function Nav() {
       }}
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
-        <span
-          className="text-[11px] font-bold tracking-[0.3em] uppercase select-none"
-          style={{ color: "var(--text)" }}
-        >
-          IYBOTS
-        </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/iybots-logo.svg"
+            alt="Iybots Technologies"
+            width={100}
+            height={27}
+            priority
+          />
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map(({ label, href }) => (
             <Link
               key={label}
               href={href}
-              className="text-sm transition-colors duration-200 hover:text-white"
+              className="font-syne text-sm font-medium transition-colors duration-200 hover:text-white"
               style={{ color: "var(--muted)" }}
             >
               {label}
@@ -85,7 +89,7 @@ export default function Nav() {
         <MagneticWrapper>
           <a
             href="#contact"
-            className="px-4 py-2 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
+            className="font-syne px-4 py-2 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
             style={{
               background: "var(--accent)",
               color: "#09090b",

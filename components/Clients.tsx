@@ -38,7 +38,7 @@ export default function Clients() {
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <motion.p
-          className="text-[10px] font-semibold uppercase tracking-[0.2em] text-center mb-12"
+          className="font-syne text-[10px] font-semibold uppercase tracking-[0.2em] text-center mb-12"
           style={{ color: "var(--muted)" }}
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}

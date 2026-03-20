@@ -40,7 +40,7 @@ function MagneticButton({
     >
       <a
         href={href}
-        className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-sm transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
+        className="font-syne inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-sm transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
         style={
           primary
             ? { background: "var(--accent)", color: "#09090b" }
@@ -74,7 +74,7 @@ export default function CTA() {
             transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           >
             <p
-              className="text-[10px] font-semibold uppercase tracking-[0.2em] mb-6"
+              className="font-syne text-[10px] font-semibold uppercase tracking-[0.2em] mb-6"
               style={{ color: "var(--accent)" }}
             >
               Get started
