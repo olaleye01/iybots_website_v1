@@ -6,13 +6,13 @@ import Image from "next/image";
 const clients = [
   {
     name: "uLessons",
-    logo: "/clients/ulessons-logo.webp",
-    width: 140,
-    height: 40,
+    logo: "/clients/ulessonLogo.png",
+    width: 160,
+    height: 32,
   },
   {
     name: "FEL",
-    logo: "/clients/fel_logo.svg",
+    logo: "/clients/fel_logo.png",
     width: 120,
     height: 40,
   },
@@ -24,7 +24,7 @@ const clients = [
   },
   {
     name: "Miva Open University",
-    logo: "/clients/Miva_Open_University_logo.jpg",
+    logo: "/clients/MIvaLogo.png",
     width: 160,
     height: 44,
   },
