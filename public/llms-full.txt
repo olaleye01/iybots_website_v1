@@ -1,0 +1,107 @@
+# Iybots Technologies — Full Company Profile
+
+> AI Automation Agency based in Lagos, Nigeria
+> Website: https://iybots.com | Email: ibrahim@iybots.com
+
+## About Iybots Technologies
+
+Iybots Technologies is an AI automation agency that designs and deploys custom AI systems for businesses across finance, logistics, SaaS, and professional services. Founded with the mission to eliminate repetitive manual work, we build production-grade automation systems that compound operational efficiency over time.
+
+Our team combines deep expertise in machine learning, workflow engineering, and systems integration. Every solution is custom-built for the client's existing tech stack and shipped in weeks, not quarters.
+
+## Our Process
+
+### 1. Discover
+We map your current operations: every manual step, every bottleneck, every repetitive task. Then we rank automation opportunities by ROI and build a prioritized roadmap.
+Deliverable: Operations audit + automation roadmap
+
+### 2. Design
+We architect an automation system tailored to your tech stack, data models, and team workflows. No off-the-shelf templates. Everything is built to fit your existing setup.
+Deliverable: System architecture + integration spec
+
+### 3. Deploy
+We build, test, and integrate each automation with your existing tools. Full documentation is included. Your team gets the keys, not a dependency on us.
+Deliverable: Production-ready system + documentation
+
+### 4. Optimize
+We monitor performance, measure impact, and iterate as your business scales. Automation is a living system. We keep it accurate, fast, and useful.
+Deliverable: Monthly performance reports + iterations
+
+## Services in Detail
+
+### AI Agent Development
+Custom autonomous agents that research, decide, and act across your systems. We've replaced entire analyst workflows with agents that run 24/7 without accumulating errors.
+- Multi-agent orchestration
+- Memory & reasoning capabilities
+- Tool use and function calling
+- Human-in-the-loop escalation
+- Production monitoring and observability
+
+### Workflow Automation
+End-to-end process automation connecting every tool in your stack, eliminating handoffs and manual triggers.
+- Trigger-based automation
+- Cross-platform orchestration
+- Error handling and retry logic
+- Conditional branching and routing
+- Real-time status monitoring
+
+### Document Intelligence
+Extract, classify, and route structured data from any document type: invoices, contracts, forms, emails.
+- OCR + LLM extraction pipelines
+- Document classification and routing
+- Template-free processing
+- Multi-language support
+- Accuracy validation layers
+
+### CRM & Pipeline Automation
+Automated lead scoring, assignment, follow-up sequences, and deal tracking without manual CRM hygiene.
+- AI-powered lead scoring
+- Auto-routing and assignment
+- Personalized follow-up sequences
+- Pipeline analytics and forecasting
+- CRM data enrichment
+
+### Data Infrastructure
+Real-time data pipelines, transformation layers, and warehousing that make your operational data actually useful.
+- ETL/ELT pipeline design
+- Real-time streaming
+- Data warehousing and modeling
+- Quality monitoring
+- Analytics-ready outputs
+
+### Custom API Integration
+Connect any combination of tools, internal systems, and third-party APIs. We work with whatever documentation exists, including none.
+- REST and GraphQL integration
+- Webhook management
+- Rate limiting and error handling
+- Reverse engineering undocumented APIs
+- Authentication flow management
+
+## Results and Metrics
+
+- 847+ workflows deployed across finance, logistics, SaaS, and professional services
+- 63.4% average time saved per automated process, measured at 30-day post-deployment
+- 14ms median response time for AI agent decision cycles in production environments
+- 31 enterprise clients operating in 12 industries across 4 continents
+
+## Client Testimonials
+
+"Iybots rebuilt our entire lead qualification flow in three weeks. What used to consume 18 hours of SDR time per week now runs end-to-end without a single manual step. The accuracy is better than what our team was achieving."
+— Marcus Adebayo, COO, Ferrum Capital
+
+"We were skeptical about AI automation fitting into our compliance-heavy operations. Iybots handled every constraint and built audit logs into each step. Our ops team now spends time on exceptions, not routine processing."
+— Lena Voss, Head of Operations, Ardent Labs
+
+"The document intelligence system they built processes 400+ contracts a week with a 97.1% extraction accuracy. We cut our legal review prep time by more than half."
+— Tariq Nasser, Founder, Meridian Ventures
+
+## Guarantee
+
+Start automating in 14 days, or your first month is free. If your first automation isn't live within 14 days of project kickoff, we credit your entire first month. No contracts. Cancel any time.
+
+## Contact Information
+
+- Website: https://iybots.com
+- Email: ibrahim@iybots.com
+- Location: Lagos, Nigeria
+- Booking: https://iybots.com/contact

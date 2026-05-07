@@ -37,10 +37,10 @@ function MagneticWrapper({ children }: { children: React.ReactNode }) {
 }
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "Results", href: "#results" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
@@ -63,7 +63,7 @@ export default function Nav() {
       }}
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" aria-label="Home">
           <Image
             src="/iybots-logo.svg"
             alt="Iybots Technologies"
@@ -88,7 +88,7 @@ export default function Nav() {
 
         <MagneticWrapper>
           <a
-            href="#contact"
+            href="/contact"
             className="font-syne px-4 py-2 rounded-lg text-xs font-semibold tracking-wide uppercase transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
             style={{
               background: "var(--accent)",

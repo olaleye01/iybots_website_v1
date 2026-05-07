@@ -106,7 +106,7 @@ export default function CTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            <MagneticButton href="mailto:hello@iybots.com" primary>
+            <MagneticButton href="mailto:ibrahim@iybots.com" primary>
               <CalendarBlank weight="bold" className="w-4 h-4" />
               Schedule a Discovery Call
             </MagneticButton>

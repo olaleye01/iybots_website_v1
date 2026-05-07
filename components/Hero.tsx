@@ -135,11 +135,11 @@ function WorkflowPreview() {
               />
             )}
             {step.status === "pending" && (
-              <Circle weight="regular" className="w-4 h-4 flex-shrink-0" style={{ color: "var(--muted-2)" }} />
+              <Circle weight="regular" className="w-4 h-4 flex-shrink-0" style={{ color: "var(--muted)" }} />
             )}
             <span
               className="text-xs flex-1"
-              style={{ color: step.status === "pending" ? "var(--muted-2)" : "var(--text)" }}
+              style={{ color: step.status === "pending" ? "var(--muted)" : "var(--text)" }}
             >
               {step.label}
             </span>
@@ -224,41 +224,32 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <motion.h1
+            <h1
               className="text-5xl md:text-6xl xl:text-[68px] font-bold tracking-tighter leading-[1.04] mb-6"
               style={{ color: "var(--text)" }}
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.75, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
               AI systems that
               <br />
               work for your
               <br />
               business,
-            </motion.h1>
+            </h1>
 
-            <motion.p
+            <p
               className="font-syne text-2xl md:text-3xl font-semibold tracking-tight mb-8"
               style={{ color: "var(--text)" }}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <TypewriterText />
-            </motion.p>
+            </p>
 
-            <motion.p
+            <p
               className="text-base leading-relaxed mb-10 max-w-[55ch]"
               style={{ color: "var(--muted)" }}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
             >
               Iybots builds custom AI automation systems: autonomous agents, workflow
               orchestration, document processing, and CRM integration. Each one built
               for your stack and shipped in weeks, not quarters.
-            </motion.p>
+            </p>
 
             <motion.div
               className="flex flex-wrap items-center gap-3"

@@ -1,0 +1,36 @@
+# Iybots Technologies
+
+> AI Automation Agency based in Lagos, Nigeria
+
+Iybots Technologies designs and deploys custom AI automation systems for businesses. We build intelligent agents, workflow orchestration, document intelligence, CRM automation, data pipelines, and API integrations that eliminate manual work and compound operational efficiency.
+
+## Services
+
+- AI Agent Development: Custom autonomous agents that research, decide, and act across your systems. Multi-agent orchestration, memory & reasoning, tool use, human-in-the-loop.
+- Workflow Automation: End-to-end process automation connecting every tool in your stack, eliminating handoffs and manual triggers.
+- Document Intelligence: Extract, classify, and route structured data from any document type — invoices, contracts, forms, emails. OCR + LLM powered.
+- CRM & Pipeline Automation: Automated lead scoring, assignment, follow-up sequences, and deal tracking without manual CRM hygiene.
+- Data Infrastructure: Real-time data pipelines, transformation layers, and warehousing. ETL/ELT, streaming, warehousing.
+- Custom API Integration: Connect any combination of tools, internal systems, and third-party APIs. REST, GraphQL, webhooks.
+
+## Key Facts
+
+- 847+ workflows deployed
+- 63.4% average time saved per automated process
+- 14ms median AI agent response time
+- 31 enterprise clients across 12 industries and 4 continents
+- 14-day deployment guarantee
+
+## Contact
+
+- Website: https://iybots.com
+- Email: ibrahim@iybots.com
+- Location: Lagos, Nigeria
+
+## Pages
+
+- Home: https://iybots.com
+- About: https://iybots.com/about
+- Services: https://iybots.com/services
+- Blog: https://iybots.com/blog
+- Contact: https://iybots.com/contact

@@ -71,6 +71,7 @@ export default function Clients() {
                   filter: "grayscale(100%) brightness(200%)",
                   maxHeight: "44px",
                   width: "auto",
+                  height: "auto",
                 }}
               />
             </div>
