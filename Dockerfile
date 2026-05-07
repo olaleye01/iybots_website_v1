@@ -1,5 +1,5 @@
 # Use Node.js as a parent image
-FROM node:14
+FROM node:20-alpine
 
 # Set the working directory
 WORKDIR /app
