@@ -30,6 +30,21 @@ export async function submitProjectBrief(data: {
       },
     });
 
+    // Trigger n8n Webhook
+    try {
+      await fetch("https://oracle.iybots.com/webhook/1d7945d2-3762-4191-8297-923bab138a99", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Basic " + Buffer.from("iyb:Testtest123").toString("base64")
+        },
+        body: JSON.stringify(brief)
+      });
+    } catch (webhookError) {
+      console.error("Failed to trigger n8n webhook:", webhookError);
+      // We don't fail the request here, since it successfully saved to the DB
+    }
+
     return { success: true, id: brief.id };
   } catch (error) {
     console.error("Error submitting project brief:", error);
