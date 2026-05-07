@@ -72,8 +72,11 @@ export default function ServicesPage() {
               exactly what to build first.
             </p>
             <a
-              href="/contact"
-              className="font-syne inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-sm"
+              href="#"
+              data-cal-link="ibrahim-from-iybots-ybtypr/15min"
+              data-cal-namespace="15min"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+              className="font-syne inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-sm transition-all duration-150 active:scale-[0.97]"
               style={{ background: "var(--accent)", color: "#09090b" }}
             >
               Book a Discovery Call

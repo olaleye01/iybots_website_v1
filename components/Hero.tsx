@@ -258,7 +258,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
             >
               <a
-                href="#contact"
+                href="/start-project"
                 className="font-syne inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
                 style={{ background: "var(--accent)", color: "#09090b" }}
               >
@@ -266,7 +266,7 @@ export default function Hero() {
                 <ArrowRight weight="bold" className="w-4 h-4" />
               </a>
               <a
-                href="#services"
+                href="/services"
                 className="font-syne inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200 hover:border-white/20"
                 style={{ border: "1px solid var(--border)", color: "var(--text)" }}
               >

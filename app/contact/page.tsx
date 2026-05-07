@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import ContactForm from "./ContactForm";
+import ProjectInviteCard from "./ProjectInviteCard";
 
 export const metadata: Metadata = {
   title: "Contact Us — Book a Discovery Call",
@@ -138,18 +138,8 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Right — Form */}
-              <div
-                className="surface-card rounded-[2rem] p-8 lg:p-10"
-              >
-                <h2
-                  className="font-syne text-2xl font-bold tracking-tight mb-8"
-                  style={{ color: "var(--text)" }}
-                >
-                  Send us a message
-                </h2>
-                <ContactForm />
-              </div>
+              {/* Right — Project Invite Card */}
+              <ProjectInviteCard />
             </div>
           </div>
         </section>

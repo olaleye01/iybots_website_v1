@@ -8,11 +8,12 @@ function MagneticButton({
   href,
   children,
   primary,
+  ...props
 }: {
   href: string;
   children: React.ReactNode;
   primary?: boolean;
-}) {
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
   const ref = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -40,6 +41,7 @@ function MagneticButton({
     >
       <a
         href={href}
+        {...props}
         className="font-syne inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-sm transition-all duration-150 active:scale-[0.97] active:-translate-y-[1px]"
         style={
           primary
@@ -106,11 +108,17 @@ export default function CTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            <MagneticButton href="mailto:ibrahim@iybots.com" primary>
+            <MagneticButton 
+              href="#" 
+              primary
+              data-cal-link="ibrahim-from-iybots-ybtypr/15min"
+              data-cal-namespace="15min"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+            >
               <CalendarBlank weight="bold" className="w-4 h-4" />
               Schedule a Discovery Call
             </MagneticButton>
-            <MagneticButton href="#services">
+            <MagneticButton href="/services">
               See what we build
               <ArrowRight weight="bold" className="w-4 h-4" />
             </MagneticButton>
