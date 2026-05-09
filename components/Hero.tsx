@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, CheckCircle, Circle } from "@phosphor-icons/react";
 
 const phrases = [
@@ -72,13 +72,15 @@ function SpinnerIcon({ className, style }: { className?: string; style?: React.C
 
 function WorkflowPreview() {
   const [processed, setProcessed] = useState(847);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
+    if (isPaused) return;
     const interval = setInterval(() => {
       setProcessed((p) => (p < 1284 ? p + 1 : p));
     }, 280);
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
 
   const pct = Math.round((processed / 1284) * 100);
 
@@ -96,7 +98,7 @@ function WorkflowPreview() {
       transition={{ duration: 0.9, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
     >
       {/* Header */}
-      <div className="flex items-start justify-between mb-6">
+      <div className="flex items-start justify-between mb-4">
         <div>
           <p
             className="font-syne text-[10px] font-semibold uppercase tracking-[0.18em] mb-1"
@@ -108,22 +110,76 @@ function WorkflowPreview() {
             Lead Qualification Pipeline
           </h3>
         </div>
-        <div
-          className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
-          style={{ background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.2)" }}
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-breathe" />
-          <span className="text-[11px] text-green-400 font-medium">Running</span>
+        <div className="flex items-center gap-2">
+          {/* Pause / Resume Button */}
+          <motion.button
+            onClick={() => setIsPaused(!isPaused)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-3 py-1 rounded-full text-[11px] font-medium transition-colors"
+            style={{
+              background: "rgba(255,255,255,0.05)",
+              border: "1px solid rgba(255,255,255,0.1)",
+              color: "var(--text)",
+            }}
+          >
+            {isPaused ? "Resume" : "Pause"}
+          </motion.button>
+
+          {/* Status Pill */}
+          <motion.div
+            animate={{
+              background: isPaused ? "rgba(245, 158, 11, 0.1)" : "rgba(34,197,94,0.1)",
+              borderColor: isPaused ? "rgba(245, 158, 11, 0.2)" : "rgba(34,197,94,0.2)",
+            }}
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border"
+          >
+            <motion.span
+              className={`w-1.5 h-1.5 rounded-full ${isPaused ? "bg-amber-400" : "bg-green-400"}`}
+              animate={{ opacity: isPaused ? 1 : [1, 0.4, 1] }}
+              transition={{ duration: 2, repeat: isPaused ? 0 : Infinity, ease: "easeInOut" }}
+            />
+            <motion.span
+              className="text-[11px] font-medium"
+              animate={{ color: isPaused ? "#fbbf24" : "#4ade80" }}
+            >
+              {isPaused ? "Paused" : "Running"}
+            </motion.span>
+          </motion.div>
         </div>
       </div>
 
+      <AnimatePresence>
+        {isPaused && (
+          <motion.p
+            initial={{ opacity: 0, height: 0, marginBottom: 0 }}
+            animate={{ opacity: 1, height: "auto", marginBottom: 16 }}
+            exit={{ opacity: 0, height: 0, marginBottom: 0 }}
+            className="text-[11px] text-amber-400/80 mb-4"
+          >
+            Automation paused. Resume anytime.
+          </motion.p>
+        )}
+      </AnimatePresence>
+
+      {!isPaused && <div className="h-4" /> /* spacer when helper text is gone */}
+
       {/* Steps */}
-      <div className="space-y-2.5 mb-6">
+      <motion.div
+        className="space-y-2.5 mb-6"
+        animate={{ opacity: isPaused ? 0.6 : 1 }}
+        transition={{ duration: 0.3 }}
+      >
         {workflowSteps.map((step, i) => (
-          <div
+          <motion.div
             key={i}
             className="flex items-center gap-3 p-3 rounded-xl"
-            style={{ background: "var(--surface-2, #18181d)" }}
+            animate={{
+              backgroundColor: step.status === "active" && !isPaused
+                ? ["#18181d", "#222228", "#18181d"]
+                : "#18181d"
+            }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
             {step.status === "done" && (
               <CheckCircle weight="fill" className="w-4 h-4 flex-shrink-0" style={{ color: "var(--accent)" }} />
@@ -131,7 +187,10 @@ function WorkflowPreview() {
             {step.status === "active" && (
               <SpinnerIcon
                 className="w-4 h-4 flex-shrink-0"
-                style={{ color: "var(--accent)", animation: "spin 1s linear infinite" }}
+                style={{
+                  color: "var(--accent)",
+                  animation: isPaused ? "none" : "spin 1s linear infinite",
+                }}
               />
             )}
             {step.status === "pending" && (
@@ -149,9 +208,9 @@ function WorkflowPreview() {
             >
               {step.status === "active" ? `${processed} / 1,284` : step.count}
             </span>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {/* Progress */}
       <div className="mb-6">
