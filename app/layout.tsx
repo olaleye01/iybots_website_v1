@@ -24,11 +24,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://iybots.com"),
   title: {
-    default: "Iybots Technologies — AI Automation Agency in Lagos, Nigeria",
-    template: "%s | Iybots Technologies",
+    default: "Iybots | Custom AI Automation Systems",
+    template: "%s | Iybots",
   },
   description:
-    "We design and deploy custom AI automation systems — intelligent agents, workflow orchestration, and document intelligence — that eliminate manual work and compound operational efficiency. Based in Lagos, serving businesses worldwide.",
+    "We design and deploy custom AI automation systems, intelligent agents, and document intelligence to eliminate manual work and scale operational efficiency.",
   keywords: [
     "AI automation agency",
     "AI automation Lagos",
@@ -51,24 +51,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://iybots.com",
-    siteName: "Iybots Technologies",
-    title: "Iybots Technologies — AI Automation Agency",
+    siteName: "Iybots",
+    title: "Iybots | Custom AI Automation Systems",
     description:
-      "Custom AI automation systems: intelligent agents, workflow orchestration, and document intelligence. 847+ workflows deployed. 63% average time saved.",
+      "We design and deploy custom AI automation systems, intelligent agents, and document intelligence to eliminate manual work and scale operational efficiency.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Iybots Technologies — AI Automation Agency",
+        alt: "Iybots | Custom AI Automation Systems",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Iybots Technologies — AI Automation Agency",
+    title: "Iybots | Custom AI Automation Systems",
     description:
-      "Custom AI automation systems that eliminate manual work and compound operational efficiency. Based in Lagos, serving globally.",
+      "We design and deploy custom AI automation systems, intelligent agents, and document intelligence to eliminate manual work and scale operational efficiency.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -90,11 +90,11 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://iybots.com/#organization",
-  name: "Iybots Technologies",
+  name: "Iybots",
   url: "https://iybots.com",
   logo: "https://iybots.com/iybots-logo.svg",
   description:
-    "AI automation agency that designs and deploys custom AI systems — intelligent agents, workflow orchestration, document intelligence, and CRM automation.",
+    "We design and deploy custom AI automation systems, intelligent agents, and document intelligence to eliminate manual work and scale operational efficiency.",
   email: "ibrahim@iybots.com",
   address: {
     "@type": "PostalAddress",
@@ -133,10 +133,10 @@ const websiteSchema = {
   "@type": "WebSite",
   "@id": "https://iybots.com/#website",
   url: "https://iybots.com",
-  name: "Iybots Technologies",
+  name: "Iybots",
   publisher: { "@id": "https://iybots.com/#organization" },
   description:
-    "AI automation agency specializing in custom AI systems, workflow orchestration, and document intelligence.",
+    "We design and deploy custom AI automation systems, intelligent agents, and document intelligence to eliminate manual work and scale operational efficiency.",
 };
 
 export default function RootLayout({
