@@ -55,8 +55,9 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav
-      className="fixed top-0 inset-x-0 z-50"
+    <>
+      <nav
+        className="fixed top-0 inset-x-0 z-50"
       style={{
         transition: "background 0.35s, border-color 0.35s, backdrop-filter 0.35s",
         background: scrolled ? "rgba(9,9,11,0.88)" : "transparent",
@@ -117,8 +118,9 @@ export default function Nav() {
           </button>
         </div>
       </div>
+    </nav>
 
-      <AnimatePresence>
+    <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -173,6 +175,6 @@ export default function Nav() {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </>
   );
 }
