@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://iybots.com"),
   title: {
-    default: "Iybots | Custom AI Automation Systems",
+    default: "Iybots Technologies | AI Automation Agency",
     template: "%s | Iybots",
   },
   description:
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://iybots.com",
     siteName: "Iybots",
-    title: "Iybots | Custom AI Automation Systems",
+    title: "Iybots Technologies | AI Automation Agency",
     description:
       "We design and deploy custom AI automation systems, intelligent agents, and document intelligence to eliminate manual work and scale operational efficiency.",
     images: [
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Iybots | Custom AI Automation Systems",
+    title: "Iybots Technologies | AI Automation Agency",
     description:
       "We design and deploy custom AI automation systems, intelligent agents, and document intelligence to eliminate manual work and scale operational efficiency.",
     images: ["/og-image.png"],
